@@ -2,6 +2,7 @@ const express = require("express");
 const hbs = require("hbs");
 const fs = require("fs")
 var app = express();
+var port = process.env.PORT || 3000;
 
 
 
@@ -58,6 +59,6 @@ app.get("/about", (req, res) => {
 });
 
 
-app.listen("3000" || process.env.PORT, () => {
+app.listen(port , () => {
     console.log("Server is running on 3000")
 });
